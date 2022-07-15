@@ -9,7 +9,7 @@ It is a http server. It will reply a request with a valid kubeadm join command t
 ## Input
 
 ```bash
-curl --fail -s -XPOST --header "format: text" "http://localhost:8000/api/v1/k8s/gentoken?NEWMASTER=TRUE"
+curl --fail -s -XPOST --header "format: text" "http://localhost:8000/join"
 ```
 
 ## Output
