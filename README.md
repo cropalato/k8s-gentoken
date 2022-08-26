@@ -12,6 +12,7 @@ It is a http server. It will reply a request with a valid kubeadm join command t
 curl --fail -s -XPOST --header "format: text" "http://localhost:8000/join"
 ```
 
-## Output
+## Building
 
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -tags netgo -ldflags '-w -extldflags "-static"' -o k8s-gentoken *.go
 
